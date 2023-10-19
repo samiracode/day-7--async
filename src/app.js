@@ -1,3 +1,3 @@
 
 
-console.log('hej!! I am here')
+console.log('window.droneId')
