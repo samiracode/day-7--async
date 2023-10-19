@@ -133,3 +133,30 @@ develpSoftware(programmers);
 
 
 // Polymorphism
+
+class Animal {
+    constructor (_name){
+        this.name = _name;
+    }
+
+    makeSound() {
+        console.log('A generic animal sound!!')
+    }
+}
+
+class Dog extends Animal {
+    constructor(_name){
+        super();
+    }
+    makeSound(){
+        //super.makeSound();
+        console.log('woof, woof, woof')
+    }
+}
+
+const a1 = new Animal('Poppy')
+const a2 = new Dog('Don')
+a1.makeSound();
+a2.makeSound();
+
+// Classes in Practice 
